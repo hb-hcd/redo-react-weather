@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import DefaultCities from './components/DefaultCities'
+import SearchBar from './components/SearchBar'
+import CityAndTime from './components/CityAndTime'
+import WeatherDetails from './components/WeatherDetails'
+import Forecast from './components/Forecast'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-auto max-w-screen-sm mt-4 py-4 px-20 bg-gradient-to-tr 
+    from-sky-500 to-indigo-500 shadow-lg  rounded-md shadow-blue-500/50 b">
+      <DefaultCities />
+      <SearchBar/>
+      <CityAndTime/>
+      <WeatherDetails/>
+      <Forecast title={"Hourly Forecast"}/>
+      <Forecast title={"Daily Forecast"}/>
     </div>
   );
 }
