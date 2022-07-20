@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DefaultCities() {
+function DefaultCities({setCity}) {
     const cities = [
         {
             id: 1,
@@ -30,7 +30,7 @@ function DefaultCities() {
             {cities.map(city => (
                 <div key={city.id}
                      className="hover:cursor-pointer">
-                     {city.name}
+                        <button className="hover:scale-125 duration-200" onClick={()=>setCity({q:city.name})} >{city.name}</button>                    
                 </div>
             ))}
         </div>
