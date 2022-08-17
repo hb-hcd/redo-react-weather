@@ -47,7 +47,8 @@ function App() {
       case 'Rain': return `bg-[url('../public/images/Drizzle.gif')]` 
       case 'Drizzle': return `bg-[url('../public/images/Drizzle.gif')]`
       case 'Snow': return `bg-[url('../public/images/Snow.gif')]`
-      case 'Storm': return `bg-[url('../public/images/Storm.gif')]`  
+      case 'Thunderstorm': return `bg-[url('../public/images/Storm.gif')]`
+      default: return `bg-[url('../public/images/Clouds.gif')]`
     }
     
   }
