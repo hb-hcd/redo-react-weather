@@ -26,7 +26,7 @@ function DefaultCities({setCity}) {
     ]
 
     return (
-        <div className="text-xl flex flex-row justify-between items-center text-white py-5 mb-2">
+        <div className="text-2xl sm:text-xl flex flex-col sm:flex-row  sm:justify-between items-center text-white py-5 mb-2">
             {cities.map(city => (
                 <div key={city.id}
                      className="hover:cursor-pointer">

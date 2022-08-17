@@ -63,7 +63,7 @@ const getFormattedData = (data) => {
     return { timezone, dt, sunrise, sunset, temp, feels_like, humidity, uvi, wind_speed, id, main, icon, hourlyForecast, dailyForecast }
 }
 
-const formattedTime = (dt, timezone, format = "DDDD' | Local time: 'TTT") => {
+const formattedTime = (dt, timezone, format = "DDDD' | Local time: 't") => {
     return DateTime.fromSeconds(dt).setZone(timezone).toFormat(format);
 }
 const weatherPicUrl = (icon) => `http://openweathermap.org/img/wn/${icon}@2x.png`;

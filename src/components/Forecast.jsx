@@ -7,7 +7,7 @@ const Forecast = ({ title, data }) => {
             <div className="flex flex-col my-4">
                 <p className="text-md text-white font-md uppercase">{title}</p>
                 <hr className="my-2" />
-                <div className="flex flex-row justify-between text-white">
+                <div className="flex flex-wrap items-center sm:flex-row sm:justify-between text-white">
                     {
                         data.map(d => (
                             <div  key={d.id} className="flex flex-col items-center">

@@ -26,15 +26,16 @@ const SearchBar = ({ setCity, setUnits, city, unit }) => {
         }
     }
     return (
-        <div className="py-4 flex flex-row justify-between items-center">
-            <div className="w-4/5 flex flex-row items-center">
-                <input className=" w-3/4 text-xl p-2 h-10  rounded-md mr-2 shadow-xl focus:outline-none
+        <div className="py-4 flex flex-col sm:flex-row justify-between items-center">
+            <div className="w-full sm:w-4/5 flex flex-col sm:flex-row items-center">
+                <input className=" w-3/4 text-xl p-2 h-10 rounded-md mr-2 shadow-xl focus:outline-none
                 capitalize placeholder:lowercase font-light"
                     placeholder="search the city..."
                     type="text"
                     defaultValue={city}
                     onChange={(e) => setQuery(e.currentTarget.value)}
                 />
+                <div className="flex flex-row mt-2 sm:mt-0 justify-center">
                 <UilSearch size={25}
                     className="text-white mx-1 hover:scale-125 duration-200 hover:cursor-pointer"
                     onClick={() => handleSearch()}
@@ -43,8 +44,9 @@ const SearchBar = ({ setCity, setUnits, city, unit }) => {
                     className="text-white  hover:scale-125 duration-200 hover:cursor-pointer"
                     onClick={() => handleLocation()}
                 />
+                </div>
             </div>
-            <div className="text-white w-1/5 items-center justify-end flex flex-row">
+            <div className="text-white sm:w-1/5 items-center justify-center sm:justify-end flex flex-row">
                 <button
                     name="metric"
                     className="text-xl font-light px-1 hover:scale-125 duration-200"

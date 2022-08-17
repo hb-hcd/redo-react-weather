@@ -16,7 +16,7 @@ const WeatherDetails = ({ data }) => {
     const weather = weatherPicUrl(icon);
     return (
         <div className="flex flex-col text-white">
-            <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-col sm:flex-row justify-between items-center">
                 <div className="ml-1">
                     <img src={weather} alt="" />
                 </div>
@@ -38,7 +38,7 @@ const WeatherDetails = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-row justify-between font-light text-sm ">
+            <div className="flex flex-wrap sm:flex-row justify-between items-center font-light text-sm sm:mt-0 mt-3">
                 <div className="flex flex-row">
                     <UilSun />
                     <p>Rise: </p>

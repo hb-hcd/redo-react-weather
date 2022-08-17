@@ -9,7 +9,7 @@ function CityAndTime({data}) {
         <div className="font-light text-xl py-2">
             {timeAndDate}
         </div>
-        <div className="text-2xl font-bold py-4">{name}, {country}</div>
+        <div className="sm:text-2xl font-bold py-4 text-lg">{name}, {country}</div>
         <div className="text-xl text-cyan-100 py-2">{main}</div>
     </div>
   )
